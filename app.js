@@ -6,7 +6,6 @@ const bodyparser = require('body-parser');
 const wikiRouter = require('./routes/wiki');
 const userRouter = require('./routes/user');
 const { db, Page, User } = require('./models');
-//const router = require('../routes/routes');
 const PORT = process.env.PORT || 3000;
 
 app.use(morgan('dev'));

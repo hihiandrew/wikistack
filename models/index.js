@@ -45,6 +45,7 @@ const User = db.define('user', {
   },
 });
 
+//deadlock
 // Page.belongsTo(User);
 // User.hasMany(Page);
 
@@ -52,4 +53,5 @@ module.exports = {
   db,
   Page,
   User,
+  generateSlug,
 };
