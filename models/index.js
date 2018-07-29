@@ -39,15 +39,13 @@ const User = db.define('user', {
   email: {
     type: Sequelize.STRING,
     allowNull: false,
-    validate: {
-      isEmail: true,
-    },
+    // validate: {
+    //   isEmail: false,
+    // },
   },
 });
 
-//deadlock
-// Page.belongsTo(User);
-// User.hasMany(Page);
+Page.belongsTo(User, { as: 'author' });
 
 module.exports = {
   db,
